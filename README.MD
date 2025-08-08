@@ -12,7 +12,7 @@ C++ 17 or higher is required (for std::filesystem).
 
 ## Getting Started
 
-This project uses the [premake5]() build system. For Visual Studio 2022, just run the `generate-vs2022.bat` file in the project's root directory.
+This project uses the [premake5](https://premake.github.io/) build system. For Visual Studio 2022, just run the `generate-vs2022.bat` file in the project's root directory.
 
 ### Other Compilers
 Other configurations must run commands in your terminal to generate the appropriate files.
