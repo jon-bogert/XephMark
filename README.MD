@@ -92,23 +92,23 @@ int main()
     }
 
     // Get list values by index
-    std::vector<int> myNumbers;
+    std::vector<float> myNumbers;
     myNumbers.resize(root["my-numbers"].Size());
     for (size_t i = 0; i < root["my-numbers"].Size(); ++i)
     {
-        myNumbers[i] = root["my-numbers"][i].As<int>();
+        myNumbers[i] = root["my-numbers"][i].As<float>();
     }
     myNumbers.clear();
     // Get list values by iterator
     for (const XephMark::Node& num : root["my-numbers"])
     {
-        myNumbers.push_back(num.As<int>());
+        myNumbers.push_back(num.As<float>());
     }
     // or
     myNumbers.clear();
     for (const auto iter = root["my-numbers"].begin(); iter != root["my-numbers"].end(); ++iter)
     {
-        myNumbers.push_back(iter->As<int>());
+        myNumbers.push_back(iter->As<float>());
     }
 
     return 0;
