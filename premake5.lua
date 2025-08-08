@@ -25,7 +25,7 @@ project "Tester"
     {
         "%{prj.name}/include",
         "%{prj.name}/src",
-		"XephMark/include"
+        "XephMark/include"
     }
 
     libdirs "%{prj.name}/lib"
@@ -69,7 +69,8 @@ project "XephMark"
     {
         "%{prj.name}/include",
         "%{prj.name}/src",
-		"%{prj.name}/ext/yaml-cpp/include"
+        "%{prj.name}/ext/yaml-cpp/include",
+        "%{prj.name}/ext/nlohmann/include"
     }
 
     defines

@@ -5,14 +5,15 @@
 
 #include <string>
 #include <fstream>
+#include <filesystem>
 
 namespace XephMark
 {
 	class IOFormatter
 	{
 	public:
-		virtual void SaveToFile(const Node& node, const std::string& path) const = 0;
-		virtual Node LoadFromFile(const std::string& path) const = 0;
+		virtual bool SaveToFile(const Node& node, const std::filesystem::path& path) const = 0;
+		virtual Node LoadFromFile(const std::filesystem::path& path) const = 0;
 	};
 
 	class IOFormatterText : public IOFormatter

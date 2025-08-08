@@ -1,23 +1,21 @@
 #include <XephMark/YAMLFormatter.h>
-
 #include <yaml-cpp/yaml.h>
 
 using namespace XephMark;
 
-void YAMLFormatter::SaveToFile(const Node& node, const std::string& path) const
+bool YAMLFormatter::SaveToFile(const Node& node, const std::filesystem::path& path) const
 {
 	std::ofstream file(path);
 
 	if (!file.is_open())
-	{
-		throw (std::exception("Could not open file for saving."));
-	}
+		return false;
 
 	file << Dump(node);
 	file.close();
+	return true;
 }
 
-Node YAMLFormatter::LoadFromFile(const std::string& path) const
+Node YAMLFormatter::LoadFromFile(const std::filesystem::path& path) const
 {
 	std::ifstream file(path);
 	if (!file.is_open())
