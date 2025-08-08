@@ -6,6 +6,22 @@ A C++ library for loading and saving object-oriented data to and from various ma
 
 The `Node` type supports values, maps, and lists.
 
+## Language Requirements
+
+C++ 17 or higher is required (for std::filesystem).
+
+## Getting Started
+
+This project uses the [premake5]() build system. For Visual Studio 2022, just run the `generate-vs2022.bat` file in the project's root directory.
+
+### Other Compilers
+Other configurations must run commands in your terminal to generate the appropriate files.
+- Visual Studio 2019: `./premake5 vs2019`
+- Makefile: `./premake5 gmake2`
+
+NOTE: Linux and macOS versions are not currently configured.
+More information on how to configure the build system can be found in the [premake5 documentation](https://premake.github.io/docs/).
+
 ## Writing
 
 ```cpp
