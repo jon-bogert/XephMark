@@ -2,7 +2,7 @@
 
 ## Description
 
-A C++ library for loading and saving object-oriented data to and from various markup languages. Data is stored in native format rather than strings for more optimized reading and writing in binary formats. Supports YAML, JSON, and BSON formats. Multi-format reading and saving may be handy debug version of an app require a text-based save format while the released product uses a binary format.
+A C++ library for loading and saving object-oriented data to and from various markup languages. Data is stored in native format rather than strings for more optimized reading and writing in binary formats. Supports YAML, JSON, and BSON formats. Multi-format reading and saving may be handy if a debug version of an app require a text-based save format while the released product uses a binary format.
 
 The `Node` type supports values, maps, and lists.
 
